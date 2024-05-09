@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TCDD Train Seat Finder</title>
+</head>
+<body>
+    <h1>TCDD Train Seat Finder</h1>
+    <form id="configForm">
+        <div>
+            <label for="binisIstasyonAdi">Departure Station:</label>
+            <select id="binisIstasyonAdi"></select>
+        </div>
+        <div>
+            <label for="inisIstasyonAdi">Arrival Station:</label>
+            <select id="inisIstasyonAdi"></select>
+        </div>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" id="date" value="2024-05-15">
+        </div>
+        <div id="hourContainer" style="display: block;">
+            <label for="hour">Select Suitable Hours:</label>
+            <div id="hourChoices"></div>
+        </div>                
+        <div style="display: none;">
+            <label for="sleepTime">Sleep Time (seconds):</label>
+            <input type="number" id="sleepTime" value="10">
+        </div>
+        <button type="button" id="find-seat-button" onclick="runFinder()">Find Seat</button>
+        <div id="log"></div>
+        <div id="result"></div>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>

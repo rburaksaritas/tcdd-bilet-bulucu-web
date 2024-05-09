@@ -1,0 +1,129 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Styling for the main heading */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Form styling */
+form {
+    background: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Division styling */
+form div {
+    margin-bottom: 10px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input and select field styling */
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Button styling */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Utility classes for hidden elements */
+.hidden {
+    display: none;
+}
+
+/* Style container for hour choices */
+#hourChoices {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Define two columns of equal width */
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style each checkbox wrapper for better spacing and alignment */
+#hourChoices div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+
+/* Style checkboxes */
+#hourChoices input[type="checkbox"] {
+    margin: 0px;
+    margin-right: 5px;
+    cursor: pointer;
+    accent-color: #3498db;
+}
+
+/* Style labels for better readability and interaction */
+#hourChoices label {
+    cursor: pointer;
+    user-select: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+/* Hover effects for labels and checkboxes */
+#hourChoices div:hover {
+    background-color: #efefef;
+}
+
+/* Loading Spinner Style */
+.loader {
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    justify-self: center;
+    align-self: center;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
