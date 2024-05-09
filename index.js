@@ -539,7 +539,7 @@ async function prefetchForHours() {
         updateHourDropdown(response.seferSorgulamaSonucList);
     } else {
         const hourContainer = document.getElementById('hourChoices');
-        hourContainer.innerHTML = "Stations pair is does not have any available journeys.<br/>Check your preferences and try again.";
+        hourContainer.innerHTML = "Station pair does not have any available journey.<br/>Check your preferences and try again.";
     }
 }
 
