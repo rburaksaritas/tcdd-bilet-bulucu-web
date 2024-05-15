@@ -552,7 +552,7 @@ function updateHourDropdown(journeys) {
         return seferTime.toTimeString().substring(0, 5); // "HH:MM" format
     }).sort((a, b) => a.localeCompare(b)); // Sort times
 
-    [...new Set(times)].forEach(time => { // Remove duplicates and add checkboxes
+    [...new Set(times)].forEach(time => {
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.id = time;
@@ -597,7 +597,6 @@ async function runFinder(){
         date: document.getElementById('date').value,
         sleepTime: parseInt(document.getElementById('sleepTime').value, 15)
     };
-    console.log('Configuration updated:', config);
 
     const selectedHours = getSelectedHours();
     if (selectedHours.length == 0) { alert("Please select one or more hours"); return; }
