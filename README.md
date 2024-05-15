@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the web version of TCDD Bilet Bulucu ([original CLI version](https://github.com/rburaksaritas/tcdd-bilet-bulucu)). See below for Turkish. This tool is designed to provide a user-friendly, web-based interface for searching train tickets on the Turkish State Railways (TCDD). It's crafted for non-technical users who prefer not to install Python or use command-line interfaces. This implementation enables anyone to search for tickets from a simple web page hosted on GitHub Pages.
+Welcome to the web version of TCDD Bilet Bulucu ([original CLI version](https://github.com/rburaksaritas/tcdd-bilet-bulucu)). See below for Turkish. This tool is designed to provide a user-friendly, web-based interface for searching train tickets on the Turkish State Railways (TCDD). It's crafted for non-technical users who prefer not to install Python or use command-line interfaces. This implementation enables anyone to search for tickets from a simple [web page hosted on GitHub Pages](https://rburaksaritas.github.io/tcdd-bilet-bulucu-web).
 
 ## Features
 
