@@ -19,7 +19,7 @@ form {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
     border-radius: 8px;
 }
 
@@ -63,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b8;
+    background-color: #2980b9;
 }
 
 /* Utility classes for hidden elements */
@@ -77,7 +77,7 @@ button:hover {
     grid-template-columns: 1fr 1fr; /* Define two columns of equal width */
     padding: 10px;
     background: #f9f9f9;
-    border: 1px solid #ddd;
+    border: 1px solid #dde;
     border-radius: 5px;
 }
 
