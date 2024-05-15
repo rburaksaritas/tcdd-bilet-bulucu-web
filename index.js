@@ -472,7 +472,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const binisSelect = document.getElementById('binisIstasyonAdi');
     const inisSelect = document.getElementById('inisIstasyonAdi');
 
-    // Convert object keys to an array and iterate
     Object.keys(stationsData).forEach(stationName => {
         const option = new Option(stationName, stationName);
         binisSelect.options.add(option);
