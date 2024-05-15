@@ -375,7 +375,7 @@ const vagonUrl = "https://api-yebsp.tcddtasimacilik.gov.tr/vagon/vagonHaritasind
 function getSelectedHours() {
     const checkboxes = document.querySelectorAll('#hourChoices input[type="checkbox"]:checked');
     const selectedHours = Array.from(checkboxes).map(checkbox => checkbox.value);
-    console.log("Selected hours:", selectedHours); // Debugging: Output selected values to console
+    console.log("Selected hours:", selectedHours);
     document.getElementById("result").innerHTML += "Selected hours: " + selectedHours + "<br />";
     return selectedHours;
 }
@@ -476,7 +476,7 @@ document.addEventListener('DOMContentLoaded', function() {
     Object.keys(stationsData).forEach(stationName => {
         const option = new Option(stationName, stationName);
         binisSelect.options.add(option);
-        inisSelect.options.add(option.cloneNode(true));  // Clones the option node for the second select
+        inisSelect.options.add(option.cloneNode(true)); 
     });
     binisSelect.value = config.binisIstasyonAdi;
     inisSelect.value = config.inisIstasyonAdi;
