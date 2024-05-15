@@ -76,7 +76,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Define two columns of equal width */
     padding: 10px;
-    background: #f9f9f9;
+    background: #f9f9f8;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -93,7 +93,7 @@ button:hover {
     margin: 0px;
     margin-right: 5px;
     cursor: pointer;
-    accent-color: #3498db;
+    accent-color: #3498dc;
 }
 
 /* Style labels for better readability and interaction */
