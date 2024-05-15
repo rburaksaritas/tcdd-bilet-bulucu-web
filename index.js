@@ -497,7 +497,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('date').addEventListener('change', prefetchForHours);
 });
 
-
+// To dynamically update the hour selection based on the preferences
 async function prefetchForHours() {
     const hourContainer = document.getElementById('hourChoices');
     hourContainer.innerHTML = ''; 
