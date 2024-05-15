@@ -63,7 +63,7 @@ button {
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #2980b8;
 }
 
 /* Utility classes for hidden elements */
@@ -76,7 +76,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Define two columns of equal width */
     padding: 10px;
-    background: #f9f9f8;
+    background: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
