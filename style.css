@@ -1,7 +1,7 @@
 /* General body styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f5;
     margin: 0;
     padding: 20px;
     color: #444;
@@ -10,7 +10,7 @@ body {
 /* Styling for the main heading */
 h1 {
     text-align: center;
-    color: #2c3e50;
+    color: #2c3e51;
 }
 
 /* Form styling */
