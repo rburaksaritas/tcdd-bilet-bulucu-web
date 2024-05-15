@@ -595,7 +595,7 @@ async function runFinder(){
         binisIstasyonAdi: document.getElementById('binisIstasyonAdi').value,
         inisIstasyonAdi: document.getElementById('inisIstasyonAdi').value,
         date: document.getElementById('date').value,
-        sleepTime: parseInt(document.getElementById('sleepTime').value, 10)
+        sleepTime: parseInt(document.getElementById('sleepTime').value, 5)
     };
     console.log('Configuration updated:', config);
 
