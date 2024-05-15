@@ -503,7 +503,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 async function prefetchForHours() {
     const hourContainer = document.getElementById('hourChoices');
-    hourContainer.innerHTML = ''; // Clear previous checkboxes
+    hourContainer.innerHTML = ''; 
 
     config = {
         binisIstasyonAdi: document.getElementById('binisIstasyonAdi').value,
