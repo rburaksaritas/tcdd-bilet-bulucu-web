@@ -366,8 +366,6 @@ var config = {
     sleepTime: 10
 };
 
-/** setupConfig */
-
 
 /** functions */
 const stations = loadStations();
@@ -545,7 +543,7 @@ async function prefetchForHours() {
 
 function updateHourDropdown(journeys) {
     const hourContainer = document.getElementById('hourChoices');
-    hourContainer.innerHTML = ''; // Clear previous checkboxes
+    hourContainer.innerHTML = '';
 
     const times = journeys.map(journey => {
         const seferTime = new Date(journey.binisTarih);
