@@ -1,7 +1,7 @@
 /* General body styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f5;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
     color: #444;
@@ -51,7 +51,7 @@ input[type="checkbox"] {
 
 /* Button styling */
 button {
-    background-color: #3498db;
+    background-color: #3498dd;
     color: white;
     border: none;
     padding: 10px 20px;
