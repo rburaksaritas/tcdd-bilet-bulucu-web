@@ -540,6 +540,7 @@ async function prefetchForHours() {
     }
 }
 
+// To format and update selections
 function updateHourDropdown(journeys) {
     const hourContainer = document.getElementById('hourChoices');
     hourContainer.innerHTML = '';
@@ -602,7 +603,7 @@ async function runFinder(){
         await fetchAndFilterJourneys();
     }
     toggleLoading('find-seat-button');
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 4; i++) {
         setTimeout(function() {
             audio.play();
         }, 4000 * i);
