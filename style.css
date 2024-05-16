@@ -1,7 +1,7 @@
 /* General body styling */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f5;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
     color: #444;
@@ -10,7 +10,7 @@ body {
 /* Styling for the main heading */
 h1 {
     text-align: center;
-    color: #2c3e51;
+    color: #2c3e52;
 }
 
 /* Form styling */
@@ -19,7 +19,7 @@ form {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
@@ -93,7 +93,7 @@ button:hover {
     margin: 0px;
     margin-right: 5px;
     cursor: pointer;
-    accent-color: #3498dc;
+    accent-color: #3498dd;
 }
 
 /* Style labels for better readability and interaction */
