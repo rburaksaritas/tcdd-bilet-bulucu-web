@@ -570,14 +570,11 @@ function updateHourDropdown(journeys) {
 
 function toggleLoading(elementId) {
     const container = document.getElementById(elementId);
-    // Check if the loader already exists
     const existingLoader = container.querySelector('.loader');
 
     if (existingLoader) {
-        // If loader exists, remove it
         container.removeChild(existingLoader);
     } else {
-        // Create a new loader element and append it to the container
         const loader = document.createElement('div');
         loader.className = 'loader';
         container.appendChild(loader);
