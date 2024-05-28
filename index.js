@@ -32,14 +32,38 @@ async function fetchStationsData() {
             acc[station.istasyonAdi] = station.istasyonId;
             return acc;
         }, {});
+        console.log('Station data is updated.');
+        return stationsData;
     } else {
         console.error('Failed to fetch station data:', response);
     }
 }
 
-function loadStations() {
+
+async function loadStations() {
+    if (Object.keys(stationsData).length === 0) {
+        const url = "https://api-yebsp.tcddtasimacilik.gov.tr/istasyon/istasyonYukle";
+        const body = {
+            "kanalKodu": "3",
+            "dil": 1,
+            "tarih": "Nov 10, 2011 12:00:00 AM",
+            "satisSorgu": true
+        };
+    
+        const response = await postRequest(url, body);
+        if (response && response.istasyonBilgileriList) {
+            stationsData = response.istasyonBilgileriList.reduce((acc, station) => {
+                acc[station.istasyonAdi] = station.istasyonId;
+                return acc;
+            }, {});
+            console.log('Station data is updated.');
+        } else {
+            console.error('Failed to fetch station data:', response);
+        }
+    }
     return stationsData;
 }
+
 
 function formatDate(date) {
     const parsedDate = new Date(date);
@@ -65,7 +89,8 @@ var config = {
 
 
 /** functions */
-const stations = loadStations();
+loadStations();
+const stations = stationsData;
 const seferUrl = "https://api-yebsp.tcddtasimacilik.gov.tr/sefer/seferSorgula";
 const vagonUrl = "https://api-yebsp.tcddtasimacilik.gov.tr/vagon/vagonHaritasindanYerSecimi";
 
@@ -164,8 +189,8 @@ async function checkSpecificSeats(seferId, vagonSiraNo, trenAdi, binisTarih) {
 /** page */
 
 // Load options for station selects on DOMContentLoaded
-document.addEventListener('DOMContentLoaded', function() {
-    const stationsData = loadStations();
+document.addEventListener('DOMContentLoaded', async function() {
+    const stationsData = await loadStations();
     const binisSelect = document.getElementById('binisIstasyonAdi');
     const inisSelect = document.getElementById('inisIstasyonAdi');
 
